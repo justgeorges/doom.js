@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  align-items: center;
+  height: 100vh;
+}
+
+.page-loader {
+  padding: 5px;
+  border: 1px solid;
+  border-color: white;
+  color: white;
+  background-color: black;
+  transition: 300ms;
+  text-decoration: none;
+}
+
+.page-loader:hover{
+  border-color: black;
+  color: black;
+  background-color: white;
+}
