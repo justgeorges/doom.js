@@ -1,9 +1,10 @@
 const gameWindow = document.querySelector("body");
-const gameStart = gameWindow.querySelector(".page-loader");
+let gameStarted = false;
 
-function startGame(e) {
-  console.log("game started!");
-  console.log(e);
-}
-
-gameStart.addEventListener("click", startGame);
+gameWindow.addEventListener(
+  "click",
+  () => {
+    console.log(`game started!`);
+  },
+  { once: true }
+);
